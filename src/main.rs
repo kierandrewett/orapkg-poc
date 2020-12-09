@@ -28,9 +28,9 @@ fn main() {
 
         cleanup(length);
     } else if length == 0 {
-        run_process('*', "core".to_string(), vec![1, 3]);
-        run_process('*', "community".to_string(), vec![2, 3]);
-        run_process('*', "linux".to_string(), vec![3, 3]);
+        run_process('^', "core".to_string(), vec![1, 3]);
+        run_process('^', "community".to_string(), vec![2, 3]);
+        run_process('^', "linux".to_string(), vec![3, 3]);
         cleanup(3);
     }
 }
